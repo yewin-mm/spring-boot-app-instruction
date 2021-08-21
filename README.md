@@ -26,7 +26,7 @@
 [linkedin-url]: https://www.linkedin.com/in/ye-win-1a33a292/
 
 # spring-boot-app-instruction
-* This is the sample instruction to setup spring boot application.
+* This is the sample instruction to setting up spring boot application.
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -48,16 +48,17 @@
 
 
 ## About The Project
-This is the sample instruction to build spring boot base application.
+This is the sample instruction to setting up spring boot based application.
 
 ## Before you begin
-You should setup and download needed application which are in [Prerequisites](#prerequisites) section.
+Before you do instruction, you should setup and download needed application which are in [Prerequisites](#prerequisites) section.
 
 
 ## Prerequisites
 * Install Git in you machine. [Get Git](https://git-scm.com/downloads)
 * Install Java in your machine. [Get Java](https://www.oracle.com/au/java/technologies/javase/javase-jdk8-downloads.html) 
-* Install Maven in your machine. [Get Maven](https://maven.apache.org/download.cgi) (noted that maven is no need to install as installer and just need to set in Path variable, please see how to install Maven in google)
+* Install Maven in your machine. [Get Maven](https://maven.apache.org/download.cgi) 
+    * Please note that maven is no need to install as installer file and just need to set in Path variable, please see how to install Maven in google.
 * Install your favourite java IDE in your machine eg. [IntelliJ](https://www.jetbrains.com/idea/download/) or [Eclipse](https://www.eclipse.org/downloads/packages/release/photon)
 * Install Postgresql database in your machine [Get Postgresql](https://www.postgresql.org/download/)
     * Here, You can install your favourite database like MySQL or Oracle or etc. 
@@ -70,7 +71,7 @@ You should setup and download needed application which are in [Prerequisites](#p
 ## Instruction
 ### Git Clone and Download
 1. Go to your folder with Command Prompt (window) or Terminal (MacOs and Linux) where you want to put your liked git project and type git clone command.
-    * If you want to view other repository, you need to click `Code` button which located top right corner of git repository and choose HTTPS instead of GitHub Cli and SSH.
+    * Go to github project repository which you want to checkout, you need to click `Code` button which located top right corner of git repository and choose HTTPS instead of GitHub Cli and SSH.
     * Copy the given link in there and type `git clone` in your Command Prompt and then Paste your copy link and press `Enter`.
     * Another way is you can copy link from browser address link bar when your cursor is reached source of git project repository and you can type in your Command Prompt like git clone {paste your copied link}.git.
     * Please note that your git clone Command should start with `git clone` and after that project repository link will follow and should end with `.git` .
