@@ -82,7 +82,7 @@ Before you do instruction, you should setup and download needed application whic
 2. If you don't want to clone this project, you can download as zip file by clicking `Code` button which located top right corner of git repository and choose `Download Zip` and move to your desire folder and unzip that downloaded project.
 
 ### Import in IDE
-* You can import your cloned or downloaded project by Import and choose import as Maven Project in ***Eclipse*** or just click Open in ***IntelliJ***. After that you can check and view your cloned project.
+* Import your cloned or downloaded project. Click Open and choose your project path under File menu in ***IntelliJ*** or Import and choose import as Maven Project in ***Eclipse***. After that you can check and view your cloned project.
 
 ### Prepare Database Setting
 * You need to setup in your application which is depend on your installed database. eg. if you installed Postgresql, please reference [For Postgresql](for-postgres) section.
