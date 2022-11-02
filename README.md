@@ -74,7 +74,7 @@ Before you do instruction, you should setting up and download needed application
 ## Instruction
 ### Git Clone and Download
 1. Go to your folder with Command Prompt (window) or Terminal (MacOs and Linux) where you want to put your liked git project and type git clone command. (You can either use Git Bash or other command line terminal)
-    * Go to GitHub project repository [my projects list](https://github.com/yewin-mm?tab=repositories) which you want to checkout, you need to click `Code` button which located top right corner of Git repository and choose HTTPS instead of GitHub Cli and SSH.
+    * Go to GitHub project repository [see my project list](https://github.com/yewin-mm?tab=repositories) which you want to checkout, you need to click `Code` button which located top right corner of Git repository and choose HTTPS instead of GitHub Cli and SSH.
     * Copy the given link in there and type `git clone` in your Command Prompt and then Paste your copy link and press `Enter`. 
     * There, link should start with `https://github.com/` and end with `.git`.
     * Another way is you can copy link from browser address link bar when your cursor is reached source of git project repository and add `.git` at the end of the link), you can type in your Command Prompt like git clone {paste your browser bar copied link}.git.
@@ -226,7 +226,7 @@ Before you do instruction, you should setting up and download needed application
 ## Contact
 Name - Ye Win <br> LinkedIn profile -  [Ye Win's LinkedIn](https://www.linkedin.com/in/ye-win-1a33a292/)  <br> Email Address - yewin.mmr@gmail.com
 
-My Repository Link: [Spring Java Projects](https://github.com/yewin-mm?tab=repositories)
+My Repository Link: [Java Spring Framework Projects](https://github.com/yewin-mm?tab=repositories)
 
 
 ## Contributing
