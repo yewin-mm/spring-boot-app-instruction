@@ -48,24 +48,26 @@
 
 
 ## About The Project
-This is the sample instruction to setting up spring boot based application.
+This is the sample instruction to setting up Java, Spring boot based application.
 
 ## Before you begin
-Before you do instruction, you should setup and download needed application which are in [Prerequisites](#prerequisites) section.
+Before you do instruction, you should setup and download needed application in you machine which are in [Prerequisites](#prerequisites) section.
 
 
 ## Prerequisites
 * Install Git in you machine. [Get Git](https://git-scm.com/downloads)
 * Install Java in your machine. [Get Java](https://www.oracle.com/au/java/technologies/javase/javase-jdk8-downloads.html) 
 * Install Maven in your machine. [Get Maven](https://maven.apache.org/download.cgi) 
-    * Please note that maven is no need to install as installer file and just need to set in Path variable, please see how to install Maven in google.
+    * Please note that maven is no need to install as installer file and just need to set Environment variable in your machine, please see how to install Maven in google.
 * Install your favourite java IDE in your machine eg. [IntelliJ](https://www.jetbrains.com/idea/download/) or [Eclipse](https://www.eclipse.org/downloads/packages/release/photon)
-* Install Postgresql database in your machine [Get Postgresql](https://www.postgresql.org/download/)
-    * Here, You can install your favourite database like MySQL or Oracle or etc. 
-* Install project lombok in your IDE. 
+* Install MySQL database in your machine [Get MySQL](https://dev.mysql.com/downloads/installer/) (If you want to use Mysql)
+* Install Postgresql database in your machine [Get Postgresql](https://www.postgresql.org/download/) (If you want to use PostgreSQL)
+    * Here, You can install your favourite database like Oracle, etc.
+* If you want to run your database with Docker [Get Docker](https://docs.docker.com/get-docker/) or Homebrew (MacOs) [Get Homebrew](https://brew.sh/), you can find way to run your Database with docker, etc in google. (For that case, you need to install Docker in your machine first)
+* Install project lombok in your IDE. (If you want to use Lombok)
     * if you don't know how to install lombok in your IDE, please reference in google.
     * Please make sure lombok dependency is added in your `pom.xml` file too.
-* Install Postman for testing API. [Get Postman](https://www.postman.com/)
+* Install Postman for testing backend API. [Get Postman](https://www.postman.com/)
 
 
 ## Instruction
