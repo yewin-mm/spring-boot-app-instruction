@@ -65,8 +65,8 @@ Before you do instruction, you should setting up and download needed application
 * Install Postgresql database in your machine [Get Postgresql](https://www.postgresql.org/download/) (If you want to use PostgreSQL)
     * Here, You can install your favourite database like Oracle, etc.
 * If you want to run your database with Docker [Get Docker](https://docs.docker.com/get-docker/) or Homebrew (MacOs) [Get Homebrew](https://brew.sh/), you can find way to run your Database with docker, etc in google. (For that case, you need to install Docker in your machine first)
-* Install project lombok in your IDE. (If you want to use Lombok)
-    * if you don't know how to install lombok in your IDE, please reference in google.
+* Install project lombok in your IDE. (My projects used Lombok and you need to add lombok plugin if you want to test by projects,)
+    * if you don't know how to install lombok in your IDE, please reference in google. [install lombok in IntelliJ and Eclipse](https://www.baeldung.com/lombok-ide)
     * Please make sure lombok dependency is added in your `pom.xml` file too.
 * Install Postman for testing backend API. [Get Postman](https://www.postman.com/)
 
