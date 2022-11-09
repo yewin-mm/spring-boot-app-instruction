@@ -78,7 +78,7 @@ Before you do instruction, you should setting up and download needed application
     * Copy the given link in there and type `git clone` in your Command Prompt and then Paste your copy link and press `Enter`. 
     * There, link should start with `https://github.com/` and end with `.git`.
     * Another way is you can copy link from browser address link bar when your cursor is reached source of git project repository and add `.git` at the end of the link), you can type in your Command Prompt like git clone {paste your browser bar copied link}.git.
-    * Please note that your git clone Command should start with `git clone` followed by space and `https://github.com/` ande after that project repository link will follow and should end with `.git` .
+    * Please note that your git clone Command should start with `git clone` followed by space and `https://github.com/{your_name}/{app_name}` and after that project repository link will follow and should end with `.git` .
     * After that You can see some text like `Cloning into etc..` and "remote etc.." after that, go to your command prompt located folder and you will see your cloned project is in there.
     * Below git clone command is one of my sample project link. So, there can be change as your desire project link.
     ```sh
