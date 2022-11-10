@@ -88,7 +88,7 @@ Before you do instruction, you should setting up and download needed application
 ### Import in IDE
 * Import your cloned or downloaded project.
 * For Intellij IDE,
-  * Under File menu, Click Open and choose your project path directory (which folder should be parent folder of pom.xml, other folders)
+  * Under File menu, Click Open and choose your project path directory (which project folder should be parent folder of pom.xml, other folders like src, etc)
   * Another way is Click Open and go to your project path directory and go inside and click `pom.xml` and choose open as  a project. 
 * For Eclipse IDE,
   * Under file menu, click Import and under Maven, choose existing maven projects and add your project path directory.
@@ -116,6 +116,15 @@ Before you do instruction, you should setting up and download needed application
          <scope>runtime</scope>
      </dependency>
     ```
+    
+* Copy above code and add in pom.xml and refresh your pom.xml to make sure your new dependency is imported into your project. 
+    * For IntelliJ, right click anywhere insdie `pom.xml` or right click on `pom.xml` and choose `maven` and click `reload project`.
+    * For Eclipse, right click on `pom.xml` and choose `maven` and click `update project`.
+* You can check new dependency is added in your project under `External Libraries` of `IntelliJ` and `Maven Dependencies` of `Eclipse`.
+* Sometimes, you need to clean your project.
+    * For IntelliJ, click `File` menu in top left corner and choose `Invalidate Caches` and (check mark on clear file system cache and local history in new version) click `Invalidate and Restart`.
+    * For Eclipse, click `Project` menu in top left corner and choose `clean` and check mark on your project and click `OK`.
+* You can manually add jar for non Maven Project in both IDE.
 
 * Change your MySQL Database username and password in spring datasource username and password fields in `application.properties` file.
 * Sample MySQL properties which need to add in `application.properties`
@@ -145,19 +154,19 @@ Before you do instruction, you should setting up and download needed application
         </dependency>
        ```
 
-   * Change your Postgresql Database username and password in spring datasource username and password fields in `application.properties` file. 
-   * Postgresql default username is postgres and password is your set password when you installed.
-   * Sample Postgresql properties which need to add in `application.properties`
-       ```sh
-        spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
-            #username is your postgresql user name and default is postgres
-        spring.datasource.username=postgres
-            #password is your set password which need to set when you install.
-        spring.datasource.password=postgres
-        spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
-        spring.jpa.hibernate.ddl-auto=update
-            # For postgresql database, it's need to set true for hibernate con_contextual creation because default is false  ## update - it's not need to set true after spring version 2.2.x.
-        spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+* Change your Postgresql Database username and password in spring datasource username and password fields in `application.properties` file. 
+* Postgresql default username is postgres and password is your set password when you installed.
+* Sample Postgresql properties which need to add in `application.properties`
+   ```sh
+    spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+        #username is your postgresql user name and default is postgres
+    spring.datasource.username=postgres
+        #password is your set password which need to set when you install.
+    spring.datasource.password=postgres
+    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+    spring.jpa.hibernate.ddl-auto=update
+        # For postgresql database, it's need to set true for hibernate con_contextual creation because default is false  ## update - it's not need to set true after spring version 2.2.x.
+    spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
        ```
    
      
