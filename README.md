@@ -117,7 +117,7 @@ Before you do instruction, you should setting up and download needed application
      </dependency>
     ```
     
-    * Copy above code and paste between `<dependencies> </dependencies>` tag of `pom.xml`  file and refresh your pom.xml to make sure your new dependency is imported into your project. 
+    * Copy above code and paste between `<dependencies> </dependencies>` tag of `pom.xml` file and refresh your pom.xml to make sure your new dependency is imported into your project. 
         * For IntelliJ, right click anywhere insdie `pom.xml` or right click on `pom.xml` and choose `maven` and click `reload project`.
         * For Eclipse, right click on `pom.xml` and choose `maven` and click `update project`.
     * You can check new dependency is added in your project under `External Libraries` of `IntelliJ` and `Maven Dependencies` of `Eclipse`.
@@ -176,7 +176,7 @@ Before you do instruction, you should setting up and download needed application
     spring.jpa.hibernate.ddl-auto=update
         # For postgresql database, it's need to set true for hibernate con_contextual creation because default is false  ## update - it's not need to set true after spring version 2.2.x.
     spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
-       ```
+   ```
     * Copy above code and paste in `application.properties` to connect PostgreSQL Database.
      
 #### For Oracle
@@ -186,7 +186,7 @@ Before you do instruction, you should setting up and download needed application
    ```sh 
     mvn install:install-file -Dfile=path/to/your/ojdbc6-11.2.0.4.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=11.2.0.4 -Dpackaging=jar
    ```
-* There -Dfile value is path of your downloaded jar file (including jar file name) and the -Dversion= is depends on your database version, here, I tested with Oracle XE 11g.
+    * There -Dfile value is path of your downloaded jar file (including jar file name) and the -Dversion= is depends on your database version, here, I tested with Oracle XE 11g.
 * Sample Oracle connector dependency which need to add in `pom.xml`.
    ```sh 
     <dependency>
@@ -219,22 +219,25 @@ Before you do instruction, you should setting up and download needed application
    ```
     * Copy above code and paste in `application.properties` to connect Oracle Database.
    
-* For more details about database setting and for other databases, please see in google.
+### For more details about database setting and for other databases, please see in google.
    
 ### Run Project
 * Run the project in your IDE (eg. Run in Intellij or Eclipse).
     * Click run button in your IDE or find the class name which name is end with `Application` which has main method and it's under `/src/main/java/{package}/`, right click on that `Application` class and choose Run or Run as java application.
+    * You can also click `run` button of your IDE if your IDE default is point to that `Application` main class. With that case, sometimes, you might got `could not found main class` error.
     * See the console log and find below text log in your IDE.
         * eg. Started SpringBootSampleCrudApplication ..etc. log (it's mean application is successfully run) 
         * eg. APPLICATION FAILED TO START ..etc. log. (it's mean application cannot run and got error). For that case, please find the root error and reference to google for that error. 
         * If some error like port is already use, you need to change the port in `application.properties` file or stop (terminate) other process or application which is using the same default port (8080). 
 
 ### Database GUI
-* Database GUI is easier to use instead of doing by database query in Command Prompt.
-* There are many good GUI tools eg. DataGrip (need to pay), DBeaver (free) and SQL developer, etc. 
-* Here you can use free database gui tools like [Dbeaver](https://dbeaver.io/) to connect and view the database.
-* If you use that, firstly, you need to connect to your database with DBeaver. Do new Database Connection in DBeaver and choose your installed database (if you don't know, see how to connect database with DBeaver in google)
-* DBeaver need to install Jar file as per your connected (installed) database
+* Database GUI is easier to use rather than doing by database query operation in Command Prompt.
+* You can easily view your data easily in Database GUI tools.
+* There are many good GUI tools eg. DataGrip (not free) [Datagrip](https://www.jetbrains.com/datagrip/), DBeaver (free) and SQL developer, etc. 
+* Here, you can use free database gui tools like [Dbeaver](https://dbeaver.io/) to connect and view the database.
+* If you use that, firstly, you need to connect to your database with DBeaver. Do new Database Connection in DBeaver and choose your installed database (if you don't know, see how to connect database with DBeaver in google).
+* DBeaver need to install Jar file as per your connected (installed) database.
+* For the usage of GUI tools like Datagrip, DBeaver, you can see more about in google.
 * After you run spring boot application which use jpa and use ddl to update to your entity class table, you should see the table which is auto create table by your application by entity class in DBeaver. If you can't see, you can refresh you database in DBeaver and find that table again. 
  
 ### Testing
