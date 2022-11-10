@@ -141,7 +141,7 @@ Before you do instruction, you should setting up and download needed application
      spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
      spring.jpa.hibernate.ddl-auto=update
     ```
-* Copy above code and paste in `application.properties` to connect MySQL Database.
+    * Copy above code and paste in `application.properties` to connect MySQL Database.
 
 #### For Postgresql
 
