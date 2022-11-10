@@ -108,7 +108,7 @@ Before you do instruction, you should setting up and download needed application
 
 #### For MySQL
 
-* Sample MySQL connector dependency which need to add in `pom.xml`.
+* Sample MySQL connector dependency which need to add in `pom.xml`.  (My sample projects use MySQL and you don't need to add again if that dependency is already existed in `pom.xml`)
     ```sh 
      <dependency>
          <groupId>mysql</groupId>
@@ -145,14 +145,14 @@ Before you do instruction, you should setting up and download needed application
 
 #### For Postgresql
 
-* Sample Postgresql connector dependency which need to add in `pom.xml`. (My sample projects use postgres and you don't need to add again if that dependency is already existed in `pom.xml`)
-       ```sh 
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-       ```
+* Sample Postgresql connector dependency which need to add in `pom.xml`.
+   ```sh 
+    <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <scope>runtime</scope>
+    </dependency>
+   ```
 
     * Copy above code and paste between `<dependencies> </dependencies>` tag of `pom.xml` file and refresh your pom.xml to make sure your new dependency is imported into your project. 
         * For IntelliJ, right click anywhere insdie `pom.xml` or right click on `pom.xml` and choose `maven` and click `reload project`.
