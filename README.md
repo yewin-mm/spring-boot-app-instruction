@@ -117,14 +117,14 @@ Before you do instruction, you should setting up and download needed application
      </dependency>
     ```
     
-* Copy above code and paste in pom.xml and refresh your pom.xml to make sure your new dependency is imported into your project. 
-    * For IntelliJ, right click anywhere insdie `pom.xml` or right click on `pom.xml` and choose `maven` and click `reload project`.
-    * For Eclipse, right click on `pom.xml` and choose `maven` and click `update project`.
-* You can check new dependency is added in your project under `External Libraries` of `IntelliJ` and `Maven Dependencies` of `Eclipse`.
-* Sometimes, you need to clean your project.
-    * For IntelliJ, click `File` menu in top left corner and choose `Invalidate Caches` and (check mark on clear file system cache and local history in new version) click `Invalidate and Restart`.
-    * For Eclipse, click `Project` menu in top left corner and choose `clean` and check mark on your project and click `OK`.
-* You can manually add jar for non Maven Project in both IDE.
+    * Copy above code and paste between `<dependencies> </dependencies>` tag of `pom.xml`  file and refresh your pom.xml to make sure your new dependency is imported into your project. 
+        * For IntelliJ, right click anywhere insdie `pom.xml` or right click on `pom.xml` and choose `maven` and click `reload project`.
+        * For Eclipse, right click on `pom.xml` and choose `maven` and click `update project`.
+    * You can check new dependency is added in your project under `External Libraries` of `IntelliJ` and `Maven Dependencies` of `Eclipse`.
+    * Sometimes, you need to clean your project.
+        * For IntelliJ, click `File` menu in top left corner and choose `Invalidate Caches` and (check mark on clear file system cache and local history in new version) click `Invalidate and Restart`.
+        * For Eclipse, click `Project` menu in top left corner and choose `clean` and check mark on your project and click `OK`.
+    * You can manually add jar for non Maven Project in both IDE.
 
 * Change your MySQL Database username and password in spring datasource username and password fields in `application.properties` file.
 * Sample MySQL properties which need to add in `application.properties`
@@ -154,14 +154,14 @@ Before you do instruction, you should setting up and download needed application
         </dependency>
        ```
 
-* Copy above code and add in pom.xml and refresh your pom.xml to make sure your new dependency is imported into your project. 
-    * For IntelliJ, right click anywhere insdie `pom.xml` or right click on `pom.xml` and choose `maven` and click `reload project`.
-    * For Eclipse, right click on `pom.xml` and choose `maven` and click `update project`.
-* You can check new dependency is added in your project under `External Libraries` of `IntelliJ` and `Maven Dependencies` of `Eclipse`.
-* Sometimes, you need to clean your project.
-    * For IntelliJ, click `File` menu in top left corner and choose `Invalidate Caches` and (check mark on clear file system cache and local history in new version) click `Invalidate and Restart`.
-    * For Eclipse, click `Project` menu in top left corner and choose `clean` and check mark on your project and click `OK`.
-* You can manually add jar for non Maven Project in both IDE.
+    * Copy above code and paste between `<dependencies> </dependencies>` tag of `pom.xml` file and refresh your pom.xml to make sure your new dependency is imported into your project. 
+        * For IntelliJ, right click anywhere insdie `pom.xml` or right click on `pom.xml` and choose `maven` and click `reload project`.
+        * For Eclipse, right click on `pom.xml` and choose `maven` and click `update project`.
+    * You can check new dependency is added in your project under `External Libraries` of `IntelliJ` and `Maven Dependencies` of `Eclipse`.
+    * Sometimes, you need to clean your project.
+        * For IntelliJ, click `File` menu in top left corner and choose `Invalidate Caches` and (check mark on clear file system cache and local history in new version) click `Invalidate and Restart`.
+        * For Eclipse, click `Project` menu in top left corner and choose `clean` and check mark on your project and click `OK`.
+    * You can manually add jar for non Maven Project in both IDE.
 
 * Change your Postgresql Database username and password in spring datasource username and password fields in `application.properties` file. 
 * Postgresql default username is postgres and password is your set password when you installed.
@@ -177,7 +177,7 @@ Before you do instruction, you should setting up and download needed application
         # For postgresql database, it's need to set true for hibernate con_contextual creation because default is false  ## update - it's not need to set true after spring version 2.2.x.
     spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
        ```
-* Copy above code and paste in `application.properties` to connect PostgreSQL Database.
+    * Copy above code and paste in `application.properties` to connect PostgreSQL Database.
      
 #### For Oracle
 * Please note that Oracle don't have public repository and so need to add jar file as manual in your maven.
@@ -196,14 +196,14 @@ Before you do instruction, you should setting up and download needed application
     </dependency>
    ```
 
-* Copy above code and add in pom.xml and refresh your pom.xml to make sure your new dependency is imported into your project. 
-    * For IntelliJ, right click anywhere insdie `pom.xml` or right click on `pom.xml` and choose `maven` and click `reload project`.
-    * For Eclipse, right click on `pom.xml` and choose `maven` and click `update project`.
-* You can check new dependency is added in your project under `External Libraries` of `IntelliJ` and `Maven Dependencies` of `Eclipse`.
-* Sometimes, you need to clean your project.
-    * For IntelliJ, click `File` menu in top left corner and choose `Invalidate Caches` and (check mark on clear file system cache and local history in new version) click `Invalidate and Restart`.
-    * For Eclipse, click `Project` menu in top left corner and choose `clean` and check mark on your project and click `OK`.
-* You can manually add jar for non Maven Project in both IDE.
+    * Copy above code and paste between `<dependencies> </dependencies>` tag of `pom.xml` file and refresh your pom.xml to make sure your new dependency is imported into your project. 
+        * For IntelliJ, right click anywhere insdie `pom.xml` or right click on `pom.xml` and choose `maven` and click `reload project`.
+        * For Eclipse, right click on `pom.xml` and choose `maven` and click `update project`.
+    * You can check new dependency is added in your project under `External Libraries` of `IntelliJ` and `Maven Dependencies` of `Eclipse`.
+    * Sometimes, you need to clean your project.
+        * For IntelliJ, click `File` menu in top left corner and choose `Invalidate Caches` and (check mark on clear file system cache and local history in new version) click `Invalidate and Restart`.
+        * For Eclipse, click `Project` menu in top left corner and choose `clean` and check mark on your project and click `OK`.
+    * You can manually add jar for non Maven Project in both IDE.
 
 * Change your Oracle Database username and password in spring datasource username and password fields in `application.properties` file. 
 * Sample Oracle properties which need to add in `application.properties`
@@ -217,7 +217,7 @@ Before you do instruction, you should setting up and download needed application
     spring.jpa.hibernate.ddl-auto=update
     spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
    ```
-* Copy above code and paste in `application.properties` to connect Oracle Database.
+    * Copy above code and paste in `application.properties` to connect Oracle Database.
    
 * For more details about database setting and for other databases, please see in google.
    
