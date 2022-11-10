@@ -117,7 +117,7 @@ Before you do instruction, you should setting up and download needed application
      </dependency>
     ```
     
-* Copy above code and add in pom.xml and refresh your pom.xml to make sure your new dependency is imported into your project. 
+* Copy above code and paste in pom.xml and refresh your pom.xml to make sure your new dependency is imported into your project. 
     * For IntelliJ, right click anywhere insdie `pom.xml` or right click on `pom.xml` and choose `maven` and click `reload project`.
     * For Eclipse, right click on `pom.xml` and choose `maven` and click `update project`.
 * You can check new dependency is added in your project under `External Libraries` of `IntelliJ` and `Maven Dependencies` of `Eclipse`.
@@ -141,11 +141,11 @@ Before you do instruction, you should setting up and download needed application
      spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
      spring.jpa.hibernate.ddl-auto=update
     ```
-
+* Copy above code and paste in `application.properties` to connect MySQL Database.
 
 #### For Postgresql
 
-  * Sample Postgresql connector dependency which need to add in `pom.xml`. (My sample projects use postgres and you don't need to add again if that dependency is already existed in `pom.xml`)
+* Sample Postgresql connector dependency which need to add in `pom.xml`. (My sample projects use postgres and you don't need to add again if that dependency is already existed in `pom.xml`)
        ```sh 
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -153,6 +153,15 @@ Before you do instruction, you should setting up and download needed application
             <scope>runtime</scope>
         </dependency>
        ```
+
+* Copy above code and add in pom.xml and refresh your pom.xml to make sure your new dependency is imported into your project. 
+    * For IntelliJ, right click anywhere insdie `pom.xml` or right click on `pom.xml` and choose `maven` and click `reload project`.
+    * For Eclipse, right click on `pom.xml` and choose `maven` and click `update project`.
+* You can check new dependency is added in your project under `External Libraries` of `IntelliJ` and `Maven Dependencies` of `Eclipse`.
+* Sometimes, you need to clean your project.
+    * For IntelliJ, click `File` menu in top left corner and choose `Invalidate Caches` and (check mark on clear file system cache and local history in new version) click `Invalidate and Restart`.
+    * For Eclipse, click `Project` menu in top left corner and choose `clean` and check mark on your project and click `OK`.
+* You can manually add jar for non Maven Project in both IDE.
 
 * Change your Postgresql Database username and password in spring datasource username and password fields in `application.properties` file. 
 * Postgresql default username is postgres and password is your set password when you installed.
@@ -168,38 +177,49 @@ Before you do instruction, you should setting up and download needed application
         # For postgresql database, it's need to set true for hibernate con_contextual creation because default is false  ## update - it's not need to set true after spring version 2.2.x.
     spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
        ```
-   
+* Copy above code and paste in `application.properties` to connect PostgreSQL Database.
      
 #### For Oracle
-   * Please note that Oracle don't have public repository and so need to add jar file as manual in your maven.
-   * Go to this link [Maven Repository](https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc6/11.2.0.4) and download jar file by clicking Jar (top-middle) of File column.
-   * Type in you Command Prompt like below
-       ```sh 
-        mvn install:install-file -Dfile=path/to/your/ojdbc6-11.2.0.4.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=11.2.0.4 -Dpackaging=jar
-       ```
-   * There -Dfile value is path of your downloaded jar file (including jar file name) and the -Dversion= is depends on your database version, here, I tested with Oracle XE 11g.
-   * Sample Oracle connector dependency which need to add in `pom.xml`.
-       ```sh 
-        <dependency>
-            <groupId>com.oracle.database.jdbc</groupId>
-            <artifactId>ojdbc6</artifactId>
-            <version>11.2.0.4</version><!-- This is your downloaded oracle jar file version which give in above Maven Repository link -->
-        </dependency>
-       ```
+* Please note that Oracle don't have public repository and so need to add jar file as manual in your maven.
+* Go to this link [Maven Repository](https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc6/11.2.0.4) and download jar file by clicking Jar (top-middle) of File column.
+* Type in you Command Prompt like below
+   ```sh 
+    mvn install:install-file -Dfile=path/to/your/ojdbc6-11.2.0.4.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=11.2.0.4 -Dpackaging=jar
+   ```
+* There -Dfile value is path of your downloaded jar file (including jar file name) and the -Dversion= is depends on your database version, here, I tested with Oracle XE 11g.
+* Sample Oracle connector dependency which need to add in `pom.xml`.
+   ```sh 
+    <dependency>
+        <groupId>com.oracle.database.jdbc</groupId>
+        <artifactId>ojdbc6</artifactId>
+        <version>11.2.0.4</version><!-- This is your downloaded oracle jar file version which give in above Maven Repository link -->
+    </dependency>
+   ```
 
-   * Change your Oracle Database username and password in spring datasource username and password fields in `application.properties` file. 
-   * Sample Oracle properties which need to add in `application.properties`
-       ```sh
-            #here tested with Oracle 11g XE database.
-        spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
-            #username is your oracle user name
-        spring.datasource.username=your username
-            #password is your set password
-        spring.datasource.password=your password
-        spring.jpa.hibernate.ddl-auto=update
-        spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
-       ```
-   * For more details about database setting and for other databases, please see in google.
+* Copy above code and add in pom.xml and refresh your pom.xml to make sure your new dependency is imported into your project. 
+    * For IntelliJ, right click anywhere insdie `pom.xml` or right click on `pom.xml` and choose `maven` and click `reload project`.
+    * For Eclipse, right click on `pom.xml` and choose `maven` and click `update project`.
+* You can check new dependency is added in your project under `External Libraries` of `IntelliJ` and `Maven Dependencies` of `Eclipse`.
+* Sometimes, you need to clean your project.
+    * For IntelliJ, click `File` menu in top left corner and choose `Invalidate Caches` and (check mark on clear file system cache and local history in new version) click `Invalidate and Restart`.
+    * For Eclipse, click `Project` menu in top left corner and choose `clean` and check mark on your project and click `OK`.
+* You can manually add jar for non Maven Project in both IDE.
+
+* Change your Oracle Database username and password in spring datasource username and password fields in `application.properties` file. 
+* Sample Oracle properties which need to add in `application.properties`
+   ```sh
+        #here tested with Oracle 11g XE database.
+    spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
+        #username is your oracle user name
+    spring.datasource.username=your username
+        #password is your set password
+    spring.datasource.password=your password
+    spring.jpa.hibernate.ddl-auto=update
+    spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+   ```
+* Copy above code and paste in `application.properties` to connect Oracle Database.
+   
+* For more details about database setting and for other databases, please see in google.
    
 ### Run Project
 * Run the project in your IDE (eg. Run in Intellij or Eclipse).
