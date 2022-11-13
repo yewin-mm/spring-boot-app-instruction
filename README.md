@@ -97,13 +97,13 @@ Before you do instruction, you should setting up and download needed application
 * If your application is not use any Database, you can skip this section.
 * Below is for demo RDBMS configurations. If you use No-SQL database, you can reference in google.
 * You need to setup in your application which is depend on your installed database. eg. if you installed Mysql, please reference [For MySQL](#for-mysql) section.
-* Find the `application.properties` file which located under `/src/main/resources` of your project.
-* Find the `pom.xml` file which located under project `Root folder` (source directory).
+* Find the `application.properties` file which located under `/src/main/resources` of your project and copy below database setting.
+* Find the `pom.xml` file which located under project `Root folder` (source directory) and copy below database setting.
 
 
 * If you got error with database when you run the application, please see in google as reference. 
 * as an example, sometime, you might got no privilege or permission denied error in Postgresql. If so, you need to create new user or new database with name 'postgres' and grant access on that. (please see in google as reference for that)
-* If you don't use Postgresql database, please change your database driver in `pom.xml` file and change your database url, username, password and dialect in `application.properties` file. 
+* If you don't use MySQL database as I used MySQL as default, please change your database driver in `pom.xml` file and change your database url, username, password and dialect in `application.properties` file. 
 
 
 #### For MySQL
