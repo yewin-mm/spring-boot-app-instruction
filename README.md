@@ -97,8 +97,8 @@ Before you do instruction, you should setting up and download needed application
 * If your application is not use any Database, you can skip this section.
 * Below is for demo RDBMS configurations. If you use No-SQL database, you can reference in google.
 * You need to setup in your application which is depend on your installed database. eg. if you installed Mysql, please reference [For MySQL](#for-mysql) section.
-* Find the `application.properties` file which located under `/src/main/resources` of your project and copy below database setting.
-* Find the `pom.xml` file which located under project `Root folder` (source directory) and copy below database setting.
+* Find the `application.properties` file which located under `/src/main/resources` of your project and copy and paste below your desire database properteis setting.
+* Find the `pom.xml` file which located under project `Root folder` (source directory) and copy and pase below your desire database dependency.
 
 
 * If you got error with database when you run the application, please see in google as reference. 
