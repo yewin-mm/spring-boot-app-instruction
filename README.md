@@ -43,6 +43,7 @@
     - [Run Project](#run-project)
     - [Database GUI](#database-gui)
     - [Testing](#testing)
+- [Becoming a Sponsor](#becoming-a-sponsor)
 - [Contact Me](#contact)
 - [Contributing](#Contributing)
 
