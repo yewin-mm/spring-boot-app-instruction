@@ -229,6 +229,7 @@ Before you do instruction, you should setting up and download needed application
         * eg. Started SpringBootSampleCrudApplication ..etc. log (it's mean application is successfully run) 
         * eg. APPLICATION FAILED TO START ..etc. log. (it's mean application cannot run and got error). For that case, please find the root error and reference to google for that error. 
         * If some error like port is already use, you need to change the port in `application.properties` file or stop (terminate) other process or application which is using the same default port (8080). 
+    * If your application used MySQL as database, you need to create database first with the name that depend on your database url connection string. (Please check in `application.properties` file.
 
 ### Database GUI
 * Database GUI is easier to use rather than doing by database query operation in Command Prompt.
